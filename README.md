@@ -114,4 +114,31 @@ uvx mcpo --port 8081 --api-key "CHANGE_ME" --config ./config.json
 - api-key should be a random string, this is **NOT your Rchat API KEY**,
 - an api-key is provided in the `mcpo` documentation as an example and should be changed.
 
+<h3>Start Python Embedding</h3>
+<p>Run the following command to start the Python embedding in RAG_ICP_CLUSTERING:</p>
+<pre><code>python BAAI_LARGE.py
+</code></pre>
 
+<h3>Start Open Web UI</h3>
+<p>Navigate to the <code>nist-chat-main/rag_execution</code> directory and run the frontend with:</p>
+<pre><code>cd RAG-ICP-CLUSTERING/nist-chat-main/rag_execution
+python launch_frontend.py
+</code></pre>
+
+## Register the tools in your local Open WebUI
+
+In a browser, go to your local Open WebUI instance, and add the tools in the admin dashboard.
+
+![owui_admin_tools.png](images%2Fowui_admin_tools.png){width=50%}
+
+Each MCP server from the `config.json` file needs to be added (2 in this case):
+<pre><code>
+- Count
+  - URL: http://localhost:8081/database
+  - API KEY: the api-key set in the mcpo command
+  - Name: CreateDB
+- Calculator:
+  - URL: http://localhost:8081/LatticeCalculator
+  - API KEY: the api-key set in the mcpo command
+  - Name: Lattice Calculator
+</code></pre>
