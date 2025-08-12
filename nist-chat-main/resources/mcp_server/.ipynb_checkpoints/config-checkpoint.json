@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    
+     "PDFtoMD": {
+      "command": "/storage/anp27/.conda/envs/myenv/bin/python",
+      "args": ["PDFtoMD.py"]
+    },
+    "database": {
+      "command": "/storage/anp27/.conda/envs/myenv/bin/python",
+      "args": ["createdb_AI.py"]
+    },
+    "embedding_control": {
+      "command": "/storage/anp27/.conda/envs/myenv/bin/python",
+      "args": ["control_AI.py"]
+    },
+    "LatticeCalculator": {
+      "command": "/storage/anp27/.conda/envs/myenv/bin/python",
+      "args": ["lattice_calculator.py"]
+    },
+    "remove_credits": {
+      "command": "/storage/anp27/.conda/envs/myenv/bin/python",
+      "args": ["remove_credits.py"]
+    },
+    "onechunkdoc": {
+      "command": "/storage/anp27/.conda/envs/myenv/bin/python",
+      "args": ["onechunkdoc.py"]
+    },
+    "query": {
+      "command": "/storage/anp27/.conda/envs/myenv/bin/python",
+      "args": ["search_database.py"]
+    }
+  }
+}
+
+

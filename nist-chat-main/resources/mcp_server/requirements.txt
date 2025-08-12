@@ -1,0 +1,14 @@
+fastmcp==2.9.2
+httpx==0.28.1
+pandas==2.3.0
+scikit-learn==1.7.0
+sympy==1.14.0
+ sentence_transformers 
+ torch 
+ fitz 
+ psutil 
+ langchain_community 
+ keybert 
+ PyPDF2 
+ numpy 
+ fastapi

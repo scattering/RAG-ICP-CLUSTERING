@@ -1,0 +1,5 @@
+shale
+porosity
+samples
+gas
+pore

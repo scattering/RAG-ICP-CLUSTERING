@@ -1,0 +1,46 @@
+methods = [
+    
+    "Diffraction",
+    "Imaging",
+    "Inelastic Scattering",
+    "Magnetic Films",
+    "Molecular Spectroscopy",
+    "NSE - Neutron Spin Echo Spectrometer",
+    "Reflectometry",
+    "SANS - Small Angle Neutron Scattering",
+    "USANS - Ultra Small Angle Neutron Scattering",
+]
+
+fields = [
+    "Biology",
+    "Chemical Engineering",
+    "Chemistry",
+    "Geoscience",
+    "Materials Science",
+    "Physics",
+    "Polymer Science",
+]
+
+scientific_concepts= [
+    "Adsorbate Dynamics",
+    "Colloid Dynamics",
+    "Complex Fluids",
+    "Frustration",
+    "Fuel Cell",
+    "Glass Dynamics",
+    "Glasses",
+    "Heavy Fermion",
+    "Hydrogen in Materials",
+    "Magnetism",
+    "Molecular Vibrations",
+    "Multiferroic",
+    "Polymer Dynamics",
+    "Polymers",
+    "Protein Dynamics",
+    "Quantum Systems",
+    "Solution Dynamics",
+    "Superconductors",
+    "Vibrational Density-of-States",
+    "Vortex",
+    "Water dynamics"
+]
