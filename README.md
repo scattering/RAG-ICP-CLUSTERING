@@ -142,3 +142,6 @@ Each MCP server from the `config.json` file needs to be added (2 in this case):
   - API KEY: the api-key set in the mcpo command
   - Name: Lattice Calculator
 </code></pre>
+...And so forth
+
+Then you should be ready to use the tools in the Open-Webui interface, and prompting them to activate.
