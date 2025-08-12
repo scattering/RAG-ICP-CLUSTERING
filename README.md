@@ -96,6 +96,7 @@ pip install -r requirements.txt
 </code></pre>
 <p>Replace <code>your_rchat_api_key_here</code> with your actual RChat API key.</p>
 <pre><code>
+  
 # Configure the MCP server
 
 The file `config.json` contains a list of MCP servers that will be made available for your local Open WevUI instance:
@@ -108,9 +109,9 @@ From the `mcp_server` folder, with your python env activated, run the following 
 ```shell
 uvx mcpo --port 8081 --api-key "CHANGE_ME" --config ./config.json
 ```
-
+</code></pre>
 **Notes:** 
 - api-key should be a random string, this is **NOT your Rchat API KEY**,
 - an api-key is provided in the `mcpo` documentation as an example and should be changed.
-</code></pre>
+
 
