@@ -78,9 +78,39 @@
     <li>Personal Support: Parents and all who contributed.</li>
   </ul>
 
-  <h2>Getting Started</h2>
-  <pre><code>git clone https://github.com/scattering/RAG-ICP-CLUSTERING.git
+<h2>Getting Started</h2>
+<pre><code>git clone https://github.com/scattering/RAG-ICP-CLUSTERING.git
 cd RAG-ICP-CLUSTERING
+
+# Create and activate a conda environment
+conda create --name rag-env python=3.10 -y
+conda activate rag-env
+
+# Install required packages
 pip install -r requirements.txt
 </code></pre>
-  <p>Use the provided scripts to run the ICP, RAG, or clustering tools. Documentation and examples will be added for each module.</p>
+<p>Use the provided scripts to run the ICP, RAG, or clustering tools. Documentation and examples will be added for each module.</p>
+
+<p>Create a <code>.env</code> file in the project root directory and add your RChat API key like this:</p>
+<pre><code>RCHAT_API_KEY=your_rchat_api_key_here
+</code></pre>
+<p>Replace <code>your_rchat_api_key_here</code> with your actual RChat API key.</p>
+<pre><code>
+# Configure the MCP server
+
+The file `config.json` contains a list of MCP servers that will be made available for your local Open WevUI instance:
+- `count.py`: python tool that counts the number of times a letter appears in a word
+- `calculator.py`: python tool that provides basic mathematical and statistical operations
+
+# Start the MCP server
+
+From the `mcp_server` folder, with your python env activated, run the following command:
+```shell
+uvx mcpo --port 8081 --api-key "CHANGE_ME" --config ./config.json
+```
+
+**Notes:** 
+- api-key should be a random string, this is **NOT your Rchat API KEY**,
+- an api-key is provided in the `mcpo` documentation as an example and should be changed.
+</code></pre>
+
