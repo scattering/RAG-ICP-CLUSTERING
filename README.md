@@ -118,7 +118,7 @@ uvx mcpo --port 8081 --api-key "CHANGE_ME" --config ./config.json
 <p>Run the following command to start the Python embedding in RAG_ICP_CLUSTERING:</p>
 <pre><code>python BAAI_LARGE.py
 </code></pre>
-
+Note: To run this model effectively, a graphics card should be used. We have tested it while running one 3090, which gave fast and accurate results, but smaller hardware may be used, most likely with increased processing time.
 <h3>Start Open Web UI</h3>
 <p>Navigate to the <code>nist-chat-main/rag_execution</code> directory and run the frontend with:</p>
 <pre><code>cd RAG-ICP-CLUSTERING/nist-chat-main/rag_execution
