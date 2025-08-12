@@ -129,8 +129,6 @@ python launch_frontend.py
 
 In a browser, go to your local Open WebUI instance, and add the tools in the admin dashboard.
 
-![owui_admin_tools.png](images%2Fowui_admin_tools.png){width=50%}
-
 Each MCP server from the `config.json` file needs to be added (2 in this case):
 <pre><code>
 - Count
