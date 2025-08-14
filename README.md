@@ -179,3 +179,5 @@ Name: Hierarchical Clustering
 
 
 Then you should be ready to use the tools in the Open-Webui interface, and toggling them to activate, allowing you to prompt them.
+
+There are videos showing how each tool works, along with prompt examples that can be used to validate if your tools are working correctly. These videos are located under the "Documentation" folder, along with slides and poster about this project.
