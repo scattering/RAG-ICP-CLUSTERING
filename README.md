@@ -100,8 +100,8 @@ pip install -r requirements.txt
 # Configure the MCP server
 
 The file `config.json` contains a list of MCP servers that will be made available for your local Open WevUI instance:
-- `count.py`: python tool that counts the number of times a letter appears in a word
-- `calculator.py`: python tool that provides basic mathematical and statistical operations
+- `search_database.py`: python tool that searches a RAG vector database
+- `lattice_calculator.py`: python tool that provides motor coordinates based on reciprocal space coordinates
 
 # Start the MCP server
 
@@ -142,4 +142,4 @@ Each MCP server from the `config.json` file needs to be added (2 in this case):
 </code></pre>
 ...And so forth
 
-Then you should be ready to use the tools in the Open-Webui interface, and prompting them to activate.
+Then you should be ready to use the tools in the Open-Webui interface, and toggling them to activate, allowing you to prompt them.
