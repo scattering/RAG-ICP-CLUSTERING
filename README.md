@@ -83,12 +83,9 @@
 cd RAG-ICP-CLUSTERING
 
 # Create and activate a conda environment
-conda create --name rag-env python=3.12 -y
+conda env create -f environment.yml
 conda activate rag-env
 
-# Install required packages
-pip install -r requirements.txt
-</code></pre>
 <p>Use the provided scripts to run the ICP, RAG, or clustering tools. Documentation and examples will be added for each module.</p>
 
 <p>Create a <code>.env</code> file in the project root directory and add your RChat API key like this:</p>
