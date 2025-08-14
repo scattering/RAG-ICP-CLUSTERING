@@ -83,7 +83,7 @@
 cd RAG-ICP-CLUSTERING
 
 # Create and activate a conda environment
-conda create --name rag-env python=3.12-y
+conda create --name rag-env python=3.12 -y
 conda activate rag-env
 
 # Install required packages
