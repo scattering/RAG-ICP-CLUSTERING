@@ -96,9 +96,17 @@ conda activate rag-env
   
 # Configure the MCP server
 
-The file `config.json` contains a list of MCP servers that will be made available for your local Open WevUI instance:
-- `search_database.py`: python tool that searches a RAG vector database
-- `lattice_calculator.py`: python tool that provides motor coordinates based on reciprocal space coordinates
+The file `config.json` contains a list of MCP servers that will be made available for your local Open WebUI instance:
+
+  search_database.py: Python tool that searches a RAG vector database
+  lattice_calculator.py: Python tool that provides motor coordinates based on reciprocal space coordinates
+  PDFtoMD.py: Python tool that converts PDF documents to Markdown
+  createdb_AI.py: Python tool that creates and initializes an AI database
+  control_AI.py: Python tool that manages embeddings and database control operations
+  remove_credits.py: Python tool that removes credits from documents or data entries
+  onechunkdoc.py: Python tool that combines document chunks into a single chunk for processing
+  clustering.py: Python tool that performs document clustering
+  clusterhierarchy.py: Python tool that generates hierarchical clustering of documents
 
 # Start the MCP server
 Run: `cd RAG-ICP-CLUSTERING/nist-chat-main/resources/mcp_server`
