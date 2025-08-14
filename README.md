@@ -126,7 +126,7 @@ python launch_frontend.py
 
 ## Register the tools in your local Open WebUI
 
-In a browser, go to your local Open WebUI instance, and add the tools in the admin dashboard.
+In a browser, go to your local Open WebUI instance, most likely at http://localhost:8080, and add the tools in the admin dashboard.
 
 Each MCP server from the `config.json` file needs to be added (2 in this case):
 <pre><code>
