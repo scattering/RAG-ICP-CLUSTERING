@@ -92,7 +92,7 @@ pip install -r requirements.txt
 <p>Use the provided scripts to run the ICP, RAG, or clustering tools. Documentation and examples will be added for each module.</p>
 
 <p>Create a <code>.env</code> file in the project root directory and add your RChat API key like this:</p>
-<pre><code>RCHAT_API_KEY=your_rchat_api_key_here
+<pre><code>RCHAT_API_KEY= "your_rchat_api_key_here"
 </code></pre>
 <p>Replace <code>your_rchat_api_key_here</code> with your actual RChat API key.</p>
 <pre><code>
