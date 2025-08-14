@@ -101,7 +101,8 @@ The file `config.json` contains a list of MCP servers that will be made availabl
 - `lattice_calculator.py`: python tool that provides motor coordinates based on reciprocal space coordinates
 
 # Start the MCP server
-
+Run: `cd RAG-ICP-CLUSTERING/nist-chat-main/resources/mcp_server`
+Navigate to the config.json file. Change the "command" for each tool to a file path that goes to a python version in your own conda environment. This is very important, as it will NOT work without this change.
 From the `mcp_server` folder, with your python env activated, run the following command:
 ```shell
 uvx mcpo --port 8081 --api-key "CHANGE_ME" --config ./config.json
@@ -112,13 +113,14 @@ uvx mcpo --port 8081 --api-key "CHANGE_ME" --config ./config.json
 - an api-key is provided in the `mcpo` documentation as an example and should be changed.
 
 <h3>Start Python Embedding</h3>
-<p>Run the following command to start the Python embedding in RAG_ICP_CLUSTERING:</p>
+<p>Run the following command to start the Python embedding in a new terminal in RAG_ICP_CLUSTERING: </p>
 <pre><code>python BAAI_LARGE.py
 </code></pre>
 Note: To run this model effectively, a graphics card should be used. We have tested it while running one 3090, which gave fast and accurate results, but smaller hardware may be used, most likely with increased processing time.
 <h3>Start Open Web UI</h3>
 <p>Navigate to the <code>nist-chat-main/rag_execution</code> directory and run the frontend with:</p>
 <pre><code>cd RAG-ICP-CLUSTERING/nist-chat-main/rag_execution
+pip install open-webui
 python launch_frontend.py
 </code></pre>
 
@@ -128,15 +130,52 @@ In a browser, go to your local Open WebUI instance, and add the tools in the adm
 
 Each MCP server from the `config.json` file needs to be added (2 in this case):
 <pre><code>
-- Count
-  - URL: http://localhost:8081/database
-  - API KEY: the api-key set in the mcpo command
-  - Name: CreateDB
-- Calculator:
-  - URL: http://localhost:8081/LatticeCalculator
-  - API KEY: the api-key set in the mcpo command
-  - Name: Lattice Calculator
+  
+PDFtoMD
+URL: http://localhost:8081/PDFtoMD
+API KEY: the api-key set in the mcpo command
+Name: PDFtoMD
+
+Database
+URL: http://localhost:8081/database
+API KEY: the api-key set in the mcpo command
+Name:CreateDB
+
+Embedding Control
+URL: http://localhost:8081/embedding_control
+API KEY: the api-key set in the mcpo command
+Name: ControlEmbeddings
+
+Lattice Calculator
+URL: http://localhost:8081/LatticeCalculator
+API KEY: the api-key set in the mcpo command
+Name: Lattice Calculator
+
+Remove Credits
+URL: http://localhost:8081/remove_credits
+API KEY: the api-key set in the mcpo command
+Name: Remove Credits
+
+OneChunkDoc
+URL: http://localhost:8081/onechunkdoc
+API KEY: the api-key set in the mcpo command
+Name: One Doc Chunking
+
+Clustering
+URL: http://localhost:8081/clustering
+API KEY: the api-key set in the mcpo command
+Name: Clustering
+
+Query
+URL: http://localhost:8081/query
+API KEY: the api-key set in the mcpo command
+Name: SearchDB
+
+Hierarchy
+URL: http://localhost:8081/hierarchy
+API KEY: the api-key set in the mcpo command
+Name: Hierarchical Clustering
 </code></pre>
-...And so forth
+
 
 Then you should be ready to use the tools in the Open-Webui interface, and toggling them to activate, allowing you to prompt them.
